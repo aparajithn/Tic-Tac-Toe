@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<Button
+    android:id="@+id/choose_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start|top"
+    android:text="@string/game_changesymbols_button" />
+
+
+<LinearLayout
+
+    android:id="@+id/grid_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cell_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/cell_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/cell_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cell_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/cell_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/cell_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cell_7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/cell_8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/cell_9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            tools:text="X" />
+    </LinearLayout>
+
+
+
+    <!--        <Button-->
+    <!--            android:id="@+id/play_again_button"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/game_playagain_button"-->
+    <!--            android:visibility="invisible"-->
+    <!--            tools:visibility="visible" />-->
+</LinearLayout>
+</FrameLayout>

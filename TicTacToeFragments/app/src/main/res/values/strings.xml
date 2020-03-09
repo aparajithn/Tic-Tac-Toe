@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TicTacToeFragments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_welcome">Welcome to the Tic Tac Toe game!</string>
+    <string name="win_message">Player %c Wins!</string>
+    <string name="lose_message">Player O Wins!</string>
+    <string name="title_playbutton">Play</string>
+    <string name="game_changesymbols_button">Change Symbols</string>
+    <string name="game_share_button">Share Result</string>
+    <string name="game_playagain_button">Play Again</string>
+    <string name="image_attribution_tictactoe">Icon made by Eucalyp from www.flaticon.com</string>
+</resources>

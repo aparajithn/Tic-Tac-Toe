@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/loseBackground">
+
+        <TextView
+            android:id="@+id/end_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/lose_message" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bug_height"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/lose_bug" />
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_share_button"/>
+
+    </LinearLayout>
+</layout>

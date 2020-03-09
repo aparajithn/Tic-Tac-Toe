@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.tictactoefragments.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.tictactoefragments.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_chooseFragment"
+            app:destination="@id/chooseFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_winFragment"
+            app:destination="@id/winFragment"
+            app:popUpTo="@+id/gameFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_gameFragment_to_loseFragment"
+            app:destination="@id/loseFragment"
+            app:popUpTo="@+id/gameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseFragment"
+        android:name="com.example.tictactoefragments.ChooseFragment"
+        android:label="ChooseFragment"
+        tools:layout="@layout/fragment_choose"/>
+    <fragment
+        android:id="@+id/winFragment"
+        android:name="com.example.tictactoefragments.WinFragment"
+        android:label="WinFragment"
+        tools:layout="@layout/fragment_win"/>
+    <fragment
+        android:id="@+id/loseFragment"
+        android:name="com.example.tictactoefragments.LoseFragment"
+        android:label="LoseFragment"
+        tools:layout="@layout/fragment_lose"/>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.tictactoefragments.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.tictactoefragments.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+</navigation>
